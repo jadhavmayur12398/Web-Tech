@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- /onblur -->
+    <!-- Enter your Name: <input type="text" id="fname" value="" onblur="myfuncton()">
+    <script>
+        function myfuction() {
+            
+        }
+    </script> -->
+
+    <!-- onsubmit  -->
+    <!-- <form action="" onsubmit="myfunction()">
+    Enter name: <input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form> -->
+
+    <!-- onfocut/ onblur -->
+    Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blureFunction()">
+    <script>
+       var x= document.getElementById("myInput")
+        function focusFunction() {
+            x.style.backgroundColor='yellow'
+            x.style.color='green'
+        }
+        function blureFunction() {
+            x.style.backgroundColor="red"
+            x.style.color='white'
+            x.style.height='100px'
+            x.style.borderRadius='15px'
+            x.style.fontSize='20px'
+
+        }
+    </script>
+</body>
+</html>

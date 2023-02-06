@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main{ background-repeat: no-repeat;
+        background-size: cover;
+           height: 825px;
+           width: 100%;
+        background-image: url(./Image/img.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #parent{ 
+         width: 45%;
+        height: 700px;
+        background-color: white;
+        display: flex;
+    }
+    #left{  
+            height: 700px;
+            width: 40%;
+            background-color:#2370f4;
+            
+            background-repeat: no-repeat;
+            
+            
+               
+    }
+    #right{ background-color: white;
+            height: 700px;
+            width: 58%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    }
+    div h1{ color: white;
+        font-family: Roboto,Arial,sans-serif;
+          margin: 50px;
+    }
+    div h2{ color:#dbdbdb;
+        color: 18px Roboto,Arial,sans-serif;
+        margin-left: 50px;
+        letter-spacing: 0;
+    }
+    img{
+         margin-top: 250px;
+         margin-left: 50px;    
+    }
+    .email{
+               
+    }
+   .new{ height: 40px;
+    width: 250px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    
+
+   }
+    .or{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .otp{ 
+        margin-left: 50px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        
+        
+        width: 200px;
+        padding: 10px;
+            
+    }
+    .footer{  margin-left: 10px; 
+               
+        
+         
+    }
+    .hyperlink{
+          margin-top: 12px;
+          
+    }
+    
+ </style>
+</head>
+<body>
+    <div id="main">
+        <div id="parent">
+            <div id="left">
+
+                
+                <h1>Login</h1>
+                <h2>Get access to your Orders, Wishlist and 
+                    <br> Recommendations</h2>
+                    <img src="./login_pro5.png" alt="no available">
+                </div>
+            <div id="right">
+
+                <form action="">
+
+                    <div >
+                       
+                        <input type="text" name="Email/Mobile" id="" placeholder="Enter Email/Mobile Number" class="new" required >
+                    </div> <br><br><br>
+                    <div>
+                        
+                        <input type="password" name="Password" id="" placeholder="Enter Password" class="new" required>
+                        <a  class="hyperlink" style="float: right; margin-right: 8px;">Forgot?</a>
+                    </div> <br><br>
+                    <div id="button">
+                        <input type="submit" value="LOGIN" onclick="alert('Login Successfully')" style="background-color: #fb641b;" class="new">
+                        
+                    </div>
+                    <div class="or">
+                         <h1 style="color: grey; ">OR</h1>                    
+                         </div>
+                    <div class="otp"> 
+                        <a href="#" style="color: #2874f0;
+                        ">Request OTP</a>
+                         </div>
+                    <div class="footer"> 
+                        <a href="$" style="color: #2874f0;">New to Flipkart? Create an account</a>
+                     </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>"

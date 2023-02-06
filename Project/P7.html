@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            /* height: 500px; */
+            /* width: 800px; */
+            margin: 0 auto;
+            margin-top: 10%;
+            box-shadow: 10px 10px 10px 0.1px ;
+        }
+        .B{
+            background-color: rgb(7, 7, 114);
+            color: aliceblue;
+        }
+        .a{
+            background-color: rgb(134, 134, 252);
+        }
+        .b{
+            background-color: rgb(172, 172, 253);
+        }
+        .c{
+            background-color: rgb(196, 196, 252);
+        }
+        .t{
+            background-color: rgb(93, 186, 244);
+        }
+        .p{
+            background-color: rgba(0, 221, 255, 0.961);
+        }
+        .su{
+            background-color: rgb(195, 195, 233);
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td colspan="2" class="B"><h3>Subject</h3></td>
+            <!-- <td></td> -->
+            <td class="B"><h3>John Doe</h3></td>
+            <td class="B"><h3>Mirium Luther</h3></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="su">Biology</td>
+            <td class="p">Practical</td>
+            <td class="a">A</td>
+            <td class="a">A</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td class="t">Theory</td>
+            <td class="a">A+</td>
+            <td class="a">A</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="su">Chemistry</td>
+            <td class="p">Practical</td>
+            <td class="b">B</td>
+            <td class="c">C</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td class="t">Theory</td>
+            <td class="a">A</td>
+            <td class="c">C+</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="su">Physics</td>
+            <td class="p">Practical</td>
+            <td class="a">A</td>
+            <td class="a">A</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td class="t">Theory</td>
+            <td class="a">A-</td>
+            <td class="a">A-</td>
+        </tr>
+    </table>
+</body>
+</html>

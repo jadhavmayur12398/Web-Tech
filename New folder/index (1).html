@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        fetch("https://run.mocky.io/v3/9b184f9d-bf48-4467-9d8f-137ea0eba817")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (info) {
+                for (var item of info.data) {
+                    var tr = document.createElement('tr');
+                    var tdName = document.createElement('td');
+                    var tdOffice = document.createElement('td');
+                    var tdPosition = document.createElement('td');
+                    var tdSalary = document.createElement('td');
+                    
+                    tdName.innerHTML = item.name;
+                    tdOffice.innerHTML = item.office;
+                    tdPosition.innerHTML = item.position;
+                    tdSalary.innerHTML = item.salary;
+
+                    tr.appendChild(tdName);
+                    tr.appendChild(tdOffice);
+                    tr.appendChild(tdPosition);
+                    tr.appendChild(tdSalary); 
+                    document.querySelector('tbody').appendChild(tr);
+
+                }
+                
+                
+
+
+            }
+            )
+
+    </script>
+</head>
+
+<body>
+    <h2>Registered Employees</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Office</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseover="color()" onmouseout="color2()"></div>
+    <!-- <button onclick="color()">change</button> -->
+    <script>
+        var color1= document.getElementById("box").style.color="orange"
+        var element=document.getElementById("box")
+        function color() {
+            if (color1 =="orange") {
+            element.style.backgroundColor="black"
+            element.style.height="300px"
+            element.style.width="300px"
+            element.style.borderRadius="50%"
+            element.innerHTML=Date();
+            }
+            else{
+            element.style.backgroundColor="red"
+                element.style.height="300px"
+            element.style.width="300px"
+            element.style.borderRadius="50%"
+            }
+        }
+
+        function color2() {
+            element.style.backgroundColor="blue"
+            element.style.height="300px"
+            element.style.width="300px"
+            element.style.borderRadius="50%"
+        }
+    </script>
+
+</body>
+</html>

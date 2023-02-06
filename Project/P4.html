@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            width: 800px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+        #child1 img{
+            height: 500px;
+            width: 300px;
+        }
+        #child2{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+        }
+        #form{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid; */
+            margin-top: 15%;
+            margin-left: 100px;
+        }
+        #button{
+            background-color: rgb(141, 248, 141);
+        }
+    </style>
+</head>
+<body>
+     <div id="parent">
+        <div id="child1"><img src="./image/sunset-g2b39226d0_1920 copy.jpg" alt="error"></div>
+        <div id="child2">
+            <div id="form">
+            <form action="">
+           <span><b>REGISTRATION INFO</b></span><br><br>
+           <input type="text" autocomplete="" placeholder="name"><br><br>
+           <input type="date" placeholder="Birthdate">      <input type="text" placeholder="geder"><br><br>
+           <input type="text" placeholder="class"><br><br>
+           <input type="number" placeholder="Registration code"><br><br>
+           <button type="submit" id="button">Search</button>
+            </form>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

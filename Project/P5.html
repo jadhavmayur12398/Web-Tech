@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Welcome.html">
+  <style>
+    body{
+      background: linear-gradient(120deg, rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+    }
+    #parent {
+      height: 550px;
+      width: 900px;
+      /* border: 1px solid; */
+      display: flex;
+      margin-left: 210px;
+      margin-top: 100px;
+      background-color: rgb(199, 199, 244);
+    }
+
+    #child1 img {
+      height: 500px;
+      width: 450px;
+      /* border: 1px solid; */
+      background: no-repeat;
+      margin-top: 25px;
+      text-align: center;
+      margin-left: 28px;
+    }
+
+    #child2 {
+      height: 400px;
+      width: 300px;
+      /* border: 1px solid; */
+      margin-top: 75px;
+      margin-left: 75px;
+    }
+
+    #q {
+      text-align: left;
+      margin-top: 15%;
+    }
+
+    .col {
+      background-color: black;
+      color: white;
+      float: left;
+      width: 50%;
+      margin: auto;
+      padding: 0 50px;
+      margin-top: 6px;
+    }
+
+    .kk {
+      position: relative;
+
+    }
+
+    .b2 {
+      background-image: url(./logo.png);
+      background-repeat: no-repeat;
+      background-position: 60px 4px;
+      background-color: rgb(14, 14, 78);
+      color: white;
+      width: 300px;
+      height: 30px;
+      border: 0em;
+      border-radius: 3px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .b1 {
+      background-color: rgb(18, 160, 18);
+      color: white;
+      width: 300px;
+      height: 30px;
+      border: 0em;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<script>
+  function validateform() {
+    var name = document.myform.name.value;
+    var password = document.myform.password.value;
+
+    if (name == null || name == "") {
+      alert("Name can't be blank");
+      return false;
+
+    }
+    if (password == null || password == "") {
+      alert("password can't be blank");
+      return false;
+    }
+    if (name == "sankey901@solutions.com") {
+      if (password == "mindset")
+        return true;
+      else {
+        alert("password is not valid");
+        return false;
+      }
+    }
+    else {
+      alert("User Name not valid");
+      return false;
+    }
+  } 
+</script>
+
+<body>
+  <div id="parent">
+    <div id="child1"><img src="./image/sunset.jpg" alt="error"></div>
+    <div id="child2">
+      <form name="myform" method="post" action="./Welcome.html" onsubmit="return validateform()" action="" id="q">
+        <span>Welcome back</span>
+        <br>
+        <h2>Login to your account</h2>
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" name="password" placeholder="enter password here...">
+        <br>
+        <br>
+        <label for="mail">Email</label>
+        <input name="name" type="email" placeholder="enter email here...">
+        <br>
+        <br>
+        <input type="radio">
+        <label for="remember">Remember me</label>
+        <span class="psw"><a href="#">Forgat password?</a></span>
+        <br>
+        <br>
+        <button class="b1" onClick="loginCheck()">Login Now</button><br>
+        <br>
+        <button class="b2" style="padding-top: 5px;">sign-in with google</button><br><br><br>
+        <span> Dont have an account? <a href="#">Join free today</a></span>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

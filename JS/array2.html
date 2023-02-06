@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating a array by using Literals------------>
+
+        let arr= [true, 1, null, "string", {}]
+        console.log(arr);
+        console.log(arr2);   
+        console.log(arr3);   
+        console.log(arr4);  
+            //this is mutable array--
+            arr[1]=false;
+            console.log(arr);
+            console.log(arr.length); 
+        
+        // By using new keyword syntax -(var arr1=new Array(1,2,3);)------>
+
+        var arr1=new Array(1,2,3,4,5,true, null)
+        console.log(arr[2]);
+
+
+
+        var arr2= [{name:1},{name:2},{name:3},{name:4},{name:5},function demo() {
+            console.log("hello");
+        },[true, "str"]]
+        console.log(arr2[2]);
+
+        // by using constructor method--------->
+
+        var arr4= Arry("idly","wada",1,true)
+        console.log(arr4[2]);
+
+        
+        
+    </script>
+</body>
+</html>

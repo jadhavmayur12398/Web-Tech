@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid;
+            background-image: linear-gradient(125deg, white, black);
+        }
+        #nav{
+            height: 100px;
+            width: 100vw;
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            
+        }
+        .net b{
+            border: 1px solid;
+            /* height: 50px; */
+            padding: 5px;
+        }
+        #c1{
+            height: 50px;
+            width: 300px;
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+
+        }
+        .box .list{
+            display: inline-block;
+            /* height: 80px; */
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        #sub-div{
+            border: 1px solid;
+            height: 50vh;
+            width: 50vw;
+            background: linear-gradient(120deg, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0.5));
+            margin: 0 auto;
+           position: relative;
+           margin-top: 20vh;
+         
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="nav">
+            <div class="net"><b>NETFLIX</b></div>
+            <div id="c1">
+                <div class="box">
+                    <select name="" id="" class="list">
+                        <option value="">English</option>
+                        <option value="">Marathi</option>
+                        <option value="">Hindi</option>
+                        <option value="">Gujrathi</option>
+                        <option value="">Rajasthani</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <button class="list" type="submit">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div id="sub-div">
+            <h1>Unlimited movies, TV</h1>
+            <h1>shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <span>Ready tp watch? Enter your email to create or restart your membership.</span><br>
+            <input type="text" placeholder="Email address"><button type="submit">Get Started ></button>
+        </div>
+    </div>
+</body>
+</html>

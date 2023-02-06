@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <!-- TAGS -->
+    <a href="https://www.google.com" target="_self">GOOGLE</a>
+    <a href="https://facebook.com" target="_blank">FACEBOOK</a>
+    <a href="https://Flifkart.com" target="_parent">Flifkart</a>
+    <a href="https://Amazone.com" target="_top">Amazone</a>
+
+    <img src="./img/woman-g8a6e64e2c_1920.jpg" alt="error" height="50" width="50">
+
+    <a href="https://https://www.google.com/search?q=pixabay&oq=&aqs=chrome.2.35i39i362l6j69i59i450l2.1495067243j0j7&sourceid=chrome&ie=UTF-8"><img src="./img/sunset-g2b39226d0_1920.jpg" height="50" width="50" alt="error"></a>
+    
+    <!-- FORMATING TAGS -->
+    <H1>Heading</H1>
+    <B>Bold</B>
+    <I>Italic</I>
+    <U>Underline</U>
+
+    <!-- BLOCK LEVEL ELEMENTS -> occupies entier width of an UI -->
+    <h3>This is block level element - ex. anchor tags</h3>
+    
+    <!-- INLINE LEVEL ELEMENTS -> occupies length of an element -->
+    <span style="background-color: lightblue">This is inline level element</span>
+
+    <!-- INLINE-BLOCK LEVEL ELEMENT -->
+    <img src="./img/woman-g8a6e64e2c_1920.jpg" alt="error" height="50">
+
+    <!-- TABLE tr- for rows and td- for columns-->
+    tr*3>td*3
+    <fieldset>
+        <center><legend>TABLE</legend>
+    <table border="5px" cellspacing="10" cellpadding="5">
+    <tr>
+        <td rowspan="2">cell 1</td>
+        <td>cell 2</td>
+        <td>cell 3</td>
+    </tr>
+    <tr>
+        <!-- <td>cell 4</td> -->
+        <td colspan="2">cell 5</td>
+        <!-- <td>cell 6</td> -->
+    </tr>
+    <tr>
+        <td>cell 7</td>
+        <td>cell 8</td>
+        <td>cell 9</td>
+    </tr>
+    </table>
+    </fieldset>
+
+    <!-- ADD AUDIO AND VIDEO IN HTML -->
+    <Video controls height="300" width="300">
+        <source src="./Video/Skyscrapers - 91744.mp4" type="video/mp4">
+    </Video>
+    
+    <audio controls>
+        <source src="./Audio/calm-river-lofi-background-music-for-videos-7289.mp3" type="AUDIO/mp3">
+    </audio>
+
+    <iframe width="100" height="100" src="https://www.youtube.com/embed/9EIQd2Laacw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- LIST -->
+    <!-- dropdown list -->
+    <select States>
+        <option value="" disabled>STATES</option>
+        <option value="">Select States</option>
+        <option value="">Maharashtra</option>
+        <option value="">Karnataka</option>
+        <option value="">Andhra</option>
+        <option value="">Gujrat</option>
+        <option value="">Madhya Pradesh</option>
+        <option value="">Chhattisgarh</option>
+        <option value="">Telangana</option>
+        <option value="">Goa</option>
+    </select>
+
+    <!-- Ordered list -->
+    <ol type="1"> 
+        <li>Black Dog</li>
+        <li>Maker's Mark</li>
+        <li>Jack Daniel's</li>
+        <li>Blender's Pride</li>
+        <li>Black Lable</li>
+    </ol>
+    <ol type="A">
+        <li>Tuborg</li>
+        <li>Kingfisher</li>
+        <li>Carlsberg</li>
+        <li>Budweiser</li>
+        <li>Foster's</li>
+    </ol>
+    <ol type="a">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>COconut</li>
+        <li>Watermelon</li>
+        <li>kiwi</li>
+    </ol>
+    <ol type="I">
+        <li>Orange</li>
+        <li>Strobeery</li>
+        <li>papaya</li>
+        <li>Blueberry</li>
+        <li>Mosambi</li>
+    </ol>
+    <ol type="i">
+        <li>Mayur</li>
+        <li>Shardul</li>
+        <li>Shubham</li>
+        <li>Abhishek</li>
+        <li>kalpesh</li>
+    </ol>
+
+    <!-- Unordered list -->
+    <ul type="disk">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>COconut</li>
+        <li>Watermelon</li>
+        <li>kiwi</li>
+    </ul>
+    <ul type="circle">
+        <li>Burger</li>
+        <li>Piza</li>
+        <li>Bhaji pav</li>
+        <li>Samosa</li>
+        <li>Vada pav</li>
+    </ul>
+    <ul type="square">
+        <li>Sprite</li>
+        <li>Thums up</li>
+        <li>Mirinda</li>
+        <li>Maza</li>
+        <li>Slice</li>
+    </ul>
+    <ul type="none">
+        <li>Puran poli</li>
+        <li>Aamm rus</li>
+        <li>Bhaji</li>
+        <li>Amti</li>
+        <li>Kurdai</li>
+    </ul>
+
+    <!-- FORMS -->
+    <form action="">
+        <label for="">Name:</label>
+        <input type="text">
+        <br>
+        <label for="">Email:</label>
+        <input type="email">
+        <br>
+        <label for="">Phone No:</label>
+        <input type="number" max="10">
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="Gender">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender">
+        <label for="Female">Female</label>
+        <br>
+        <button type="submit">submit</button>
+        <br>
+        <button type="reset">reset</button>
+        <br>
+    </form>
+
+    <!-- HTML COLORS -->
+    <H3 style="background-color: red">color by name</H3>
+    <h3 style="background-color: rgb(120,100,5)">color by rgb</h3>
+    <h3 style="background-color: #fff000">color by hex code</h3>
+    <h3 style="background-color: hsl(30, 3%, 81%)">color by hsl</h3>
+
+    <!-- Content/Border/Padding  -->
+
+    <!-- ATRIBUTES (INPUT) -->
+
+    <!-- CONTAINER ELEMENT -->
+    
+    
+
+</body>
+</html>

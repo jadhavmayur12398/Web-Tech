@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create object using new keyword -------->
+
+        // let obj= new Object();
+        // obj.name="mahindra",
+        // obj.model="thar",
+        // obj.color="black"
+        // console.log(obj);
+
+        //nested object
+        // let obj= new Object();
+        // obj.name="mahindra",
+        // obj.model="thar",
+        // obj.color="black"
+        // console.log(obj);
+        // obj.Object={name:"tata", model:"safari"}
+        // console.log(obj.object.name="vhjvkj dsdwd");
+        // obj.name="landrover"
+        // obj.Object.name="apple"
+
+        // by using constructor function--------------->
+        function Person(name,age,wt) {
+            this.name=name
+            this.age=age
+            this.wt=wt
+        }
+        let obj= new Person("mayur", 24, 60)
+        console.log(obj);
+    </script>
+</body>
+</html>

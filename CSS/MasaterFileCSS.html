@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 1px solid;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(168, 110, 222);
+        }
+        #child{
+            border: 1px solid;
+            height: 400px;
+            width: 400px;
+            background-color: blueviolet;
+        }
+        .c2{
+            border: 1px solid;
+            height: 100px;
+            width: 50px;
+            background-color: rgb(82, 6, 152);
+        }
+        #bg{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(70, 199, 203);
+            background-image: url(./img/APJ-2008.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-attachment: scroll;
+            background-position: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS SELECTORS 1) CLASS SELECTOR
+                       2) ID SELECTOR
+                       3) ELEMENT SELECTOR  -->
+    
+    <!-- ID SELECTOR  To apply properties for specific element-->
+    <div id="parent">
+        <div id="child">
+            <div class="c2"></div>
+            <div class="c2"></div>
+            <div class="c2"></div>
+            <div class="c2"></div>
+        </div>
+    </div>
+
+    <!-- CLASS SELECTOR whenever we want to apply similer group of css properties to group of elements beyond to specific group -->
+    <div id="parent">
+        <div id="child">
+            <div class="c2"></div>
+            <div class="c2"></div>
+            <div class="c2"></div>
+            <div class="c2"></div>
+        </div>
+    </div>
+
+    <!-- CSS BACKGROUNDS -->
+    <div id="bg"></div>
+</body>
+</html>

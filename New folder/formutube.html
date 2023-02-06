@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poopins', sans-serif;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        .container{
+            max-width: 700px;
+            width: 100%;
+            background-color: white;
+            padding: 25px 30px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .container .title::before{
+            /* containt: ''; */
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: #9b59b6;
+        }
+        .container form .user_details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+        form .user_details .input_box{
+           margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+        .user_details .input_box .details{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .user_details .input_box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 50px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+        .user_details .input_box input:focus,
+        .user_details .input_box input:focus{
+            border-color: #9b59b6;
+        }
+       form .gender_details .gender_title{
+        font-size: 20px;
+        font-weight: 500;
+       }
+       form .gender_details .catagory{
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        /* background: red; */
+        justify-content: space-between;
+       }
+       .gender_details .catagory label{
+        display: flex;
+        align-items: center;
+       }
+       .gender_details .catagory .dot{
+        height: 18px;
+        width: 18px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 5px solid transparent;
+        transition: all 0.3s ease;
+       }
+       #dot-1:checked ~ .catagory .one,
+       #dot-1:checked ~ .catagory .two,
+       #dot-1:checked ~ .catagory .three{
+        border-color: #d9d9d9;
+        background: #9b59b6;
+       }
+       form input[type="radio"]{
+        display: none;
+       }
+       form .button{
+        height: 45px;
+        margin: 45px 0;
+       }
+       form .button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+       }
+       form .button input:hover{
+        background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+       }
+       @media (max-width: 584px){
+        .container{
+            max-width: 100%;
+        }
+        form .user_details .input_box{
+           margin-bottom: 15px;
+            width: 100%;
+       }
+       form .gender_details .catagory{
+        /* display: flex; */
+        width: 100%;
+       }
+       .container form .user_details{
+        max-height: 300px;
+        overflow-y: scroll ;
+       }
+       .user_details::-webkit-scrollbar{
+        width: 0;
+       }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="title">Registration</div>
+    <form action="">
+        <div class="user_details">
+            <div class="input_box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input_box">
+                <span class="details">User Name</span>
+                <input type="text" placeholder="Enter user name" required>
+            </div>
+            <div class="input_box">
+                <span class="details">Email Id</span>
+                <input type="text" placeholder="Enter Email Id" required>
+            </div>
+            <div class="input_box">
+                <span class="details">Phone No</span>
+                <input type="text" placeholder="Enter your phone no" required>
+            </div>
+            <div class="input_box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your Password" required>
+            </div>
+            <div class="input_box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Confirm Password" required>
+            </div>
+        </div>
+        <div class="gender_details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="grnder_title">Gender</span>
+            <div class="catagory">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: content-box;
+        }
+        #parent{
+            height: 100vh;
+            width: 100vw;
+            /* background-image:url(./image/mobile-phone-g5bab23a90_1920.jpg); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child{
+            height: 500px;
+            width: 700px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #c1{
+            height: 500px;
+            width: 300px;
+        }
+        #c2 img{
+            height: 500px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="c1">
+                <form action="">
+                    <h1>Sign In / Sign Up</h1>
+                    <label for="">User name</label><br><input type="text" placeholder="User name"><br>
+                    <label for="">Password</label><br><input type="password" placeholder="Password"><br>
+                    <input type="radio"><label for="">Remember me?</label><br>
+                    <button type="submit">SIGN IN</button><br>
+                    <span>FORGOT PASSWORD?</span>
+                </form>
+            </div>
+            <div id="c2"><img src="./image/keyboard7.jpg" alt="error"></div>
+        </div>
+    </div>
+</body>
+</html>

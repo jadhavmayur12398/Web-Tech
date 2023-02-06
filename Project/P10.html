@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; padding: 0; */
+        }
+
+        body {
+            background-image: linear-gradient(120deg, black, white)
+        }
+
+        #parent {
+            height: 700px;
+            width: 400px;
+            background-image: linear-gradient(to right, rgb(255, 165, 0), rgb(255, 99, 71));
+            margin: auto;
+            box-shadow: 5px 5px 5px 0.5px;
+            border-radius: 15px;
+        }
+
+        #pizza img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin: 5%;
+        }
+
+        button {
+            height: 30px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: blanchedalmond;
+            margin-top: 2%;
+            box-shadow: 3px 3px 5px 0.5px;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="pizza"><img src="./image/pizza2.jpg" alt="error"></div>
+        <form action=""></form>
+        <center>
+            <h2>Pizza Form</h2>
+        </center>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="">First Name:</label><input type="text" name="" id=""><br>
+            <label for="">Last Name:</label><input type="text" name="" id=""><br>
+            <label for="">Phone:</label><input type="number" name="" id=""><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza</legend>
+            <ul type="circle">@Size:
+                <li>Small</li>
+                <li>Medium</li>
+                <li>Large</li>
+            </ul>
+            <ul typpe="square">@Toppings(check all the apply):
+                <li>Extra Cheese</li>
+                <li>Pepperroni</li>
+                <li>Sausage</li>
+                <li>Mushrooms</li>
+                <li>Black Olives</li>
+                <li>Green Peppers</li>
+                <li>Tomatos</li>
+                <li>Onions</li>
+                <li>Anchovies</li>
+            </ul>
+        </fieldset>
+        <center><button type="button">Enter my information</button></center>
+        </form>
+    </div>
+</body>
+
+</html>
